@@ -54,30 +54,45 @@ export default function Projects() {
   
         </div>
   
-        {/* WICHTIGE LINKS */}
-        <h2>Wichtige Links</h2>
-  
-        <p>🔗 Mein LinkedIn-Profil:{" "}
-          <a
-            href="https://www.linkedin.com/in/rodrigue-kengmo-k-45b48a252/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="important-link"
-          >
-            LinkedIn ansehen
-          </a>
-        </p>
-  
-        <p>📄 Mein Lebenslauf herunterladen:{" "}
-          <a
-            href="/Lebenslauf_Kengmo_Rodrigue.pdf"
-            download
-            className="important-link"
-          >
-            Lebenslauf herunterladen
-          </a>
-        </p>
-      </div>
+      {/* WICHTIGE LINKS */}
+<h2>Wichtige Links</h2>
+
+{/* Lien LinkedIn */}
+<p>🔗 Mein LinkedIn-Profil:{" "}
+  <a
+    href="https://www.linkedin.com/in/rodrigue-kengmo-k-45b48a252/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="important-link"
+  >
+    LinkedIn ansehen
+  </a>
+</p>
+
+{/* Nouveau lien GitHub ajouté ici */}
+<p>📂 Mein GitHub-Repository:{" "}
+  <a
+    href="https://github.com/Rodriguevichlemonde"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="important-link"
+  >
+    Mein GitHub-Profil ansehen
+  </a>
+</p>
+
+{/* Lien de téléchargement du CV */}
+<p>📄 Mein Lebenslauf herunterladen:{" "}
+  <a
+    href="/Lebenslauf_Kengmo_Rodrigue.pdf"
+    download
+    className="important-link"
+  >
+    Lebenslauf herunterladen
+  </a>
+</p>
+</div>
+
     );
   }
   

@@ -95,9 +95,10 @@ export default function Home() {
     <a href="#" className="project-button">Zum Projekt</a>
   </div>
 </div>
-  {/* Liens importants */}
-  <h2>Wichtige Links</h2>
+  {/* WICHTIGE LINKS */}
+<h2>Wichtige Links</h2>
 
+{/* Lien LinkedIn */}
 <p>🔗 Mein LinkedIn-Profil:{" "}
   <a
     href="https://www.linkedin.com/in/rodrigue-kengmo-k-45b48a252/"
@@ -109,6 +110,19 @@ export default function Home() {
   </a>
 </p>
 
+{/* Nouveau lien GitHub ajouté ici */}
+<p>📂 Mein GitHub-Repository:{" "}
+  <a
+    href="https://github.com/Rodriguevichlemonde"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="important-link"
+  >
+    Mein GitHub-Profil ansehen
+  </a>
+</p>
+
+{/* Lien de téléchargement du CV */}
 <p>📄 Mein Lebenslauf herunterladen:{" "}
   <a
     href="/Lebenslauf_Kengmo_Rodrigue.pdf"
@@ -118,7 +132,7 @@ export default function Home() {
     Lebenslauf herunterladen
   </a>
 </p>
-
 </div>
+
 );
 }
