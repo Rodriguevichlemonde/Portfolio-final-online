@@ -17,11 +17,22 @@ export default function Home() {
         
         {/* Texte de présentation */}
         <div className="presentation-text">
-          <h1>SAP-Berater / Consultant mit Schwerpunkt Finanzwesen und Buchhaltung</h1>
+          <h1>SAP-Berater / Consultant, Certified Associate – SAP S/4HANA Cloud, Private Edition</h1>
           <p>
-          Erfahrener Fachmann im Finanzwesen, Buchhaltung, Analyse, Verwaltung und Qualitätsmanagement, mit Fokus auf die Optimierung von Finanzprozessen. Aktuell in Weiterbildung zum SAP-Berater im Bereich Finanzwesen.
-          Zusätzlich fundierte Kenntnisse in IT-Sicherheit, insbesondere Netzwerksicherheit und Bedrohungsanalyse, sowie in Webentwicklung (HTML, CSS, JavaScript). Praktische Erfahrung durch die Entwicklung eigener Websites..
-          </p>
+  Als zertifizierter SAP-Consultant (FI) und Key-User (CO) bringe ich umfassende Erfahrung in der Analyse, Konzeption und Implementierung von SAP-Lösungen mit. Mein beruflicher Werdegang umfasst vier Jahre Expertise im Bereich Finanzwesen, Buchhaltung, Analyse, Verwaltung und Qualitätsmanagement, mit besonderem Fokus auf die Optimierung von Finanzprozessen.
+</p>
+<ul>
+  <li><strong>SAP FI & CO Expertise</strong> – Entwicklung und Implementierung von Lösungen in komplexen Unternehmensumgebungen</li>
+  <li><strong>Systemintegration & Digitalisierung</strong> – Anbindung von SAP an bestehende ERP-Landschaften</li>
+  <li><strong>S/4HANA Migration</strong> – Entwicklung von Migrationsstrategien zur Einführung von S/4HANA</li>
+  <li><strong>Schulungen & Trainings</strong> – Erstellung und Durchführung von mehrsprachigen Endbenutzer- & Key-User-Schulungen (Deutsch & Französisch)</li>
+  <li><strong>Schnittstellenkommunikation</strong> – Vermittlung zwischen technischen und nichttechnischen Stakeholder zur Optimierung komplexer Systemlandschaften</li>
+</ul>
+<p>
+  Zusätzlich verfüge ich über fundierte Kenntnisse in IT-Sicherheit, insbesondere Netzwerksicherheit und Bedrohungsanalyse, sowie in Webentwicklung (HTML, CSS, JavaScript).
+</p>
+<p><strong>🎯 Zertifizierung:</strong> SAP Certified Associate – SAP S/4HANA Cloud, Private Edition</p>
+
 
           {/* Bouton de téléchargement du CV */}
           <a href="/Lebenslauf_Kengmo Rodrigue.pdf" download className="cv-button">

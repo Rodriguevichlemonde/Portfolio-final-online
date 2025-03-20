@@ -56,58 +56,6 @@ main {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Ombre légère autour de la carte */
   border-radius: 8px; /* Coins arrondis pour un effet moderne */
 }
-
-/* Header */
-/* Ceci définit la barre en haut de la page avec un fond bleu */
-header {
-  background: #0070f3; /* Bleu moderne */
-  padding: 15px 0; /* Espace intérieur en haut et en bas */
-  color: white; /* Texte en blanc */
-  text-align: center; /* Centre le texte horizontalement */
-}
-
-/* Ceci enlève les points de la liste et aligne les liens horizontalement */
-nav ul {
-  list-style: none; /* Enlève les puces devant les éléments */
-  display: flex; /* Met les éléments sur la même ligne */
-  justify-content: center; /* Centre les éléments horizontalement */
-  gap: 20px; /* Met un espace de 20px entre les éléments */
-  margin: 0; /* Enlève la marge de la liste */
-  padding: 0; /* Enlève le padding de la liste */
-}
-
-/* Ceci rend les liens blancs et en gras */
-nav ul li a {
-  color: white; /* Texte en blanc */
-  text-decoration: none; /* Enlève le soulignement */
-  font-weight: bold; /* Texte en gras */
-}
-
-/* Ceci ajoute un soulignement quand on passe la souris sur le lien */
-nav ul li a:hover {
-  text-decoration: underline; /* Remet le soulignement au survol */
-}
-
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  background: #f0f0f0;
-  font-size: 14px;
-  color: #666;
-}
 /* Style du formulaire */
 form {
   display: flex;
@@ -262,7 +210,7 @@ textarea {
   height: 250px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #66778b;
+  border: 4px solid #1c78e2;
 }
 
 /* Texte de présentation */
@@ -298,7 +246,7 @@ textarea {
 }
 
 .cv-button:hover {
-  background: #005bb5;
+  background: #e0e3e6;
 }
 /* --- SERVICES --- */
 .services {
