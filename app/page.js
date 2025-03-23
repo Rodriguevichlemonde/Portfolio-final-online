@@ -1,47 +1,55 @@
 import Image from 'next/image';
+
 export default function Home() {
   return (
     <div className="home-container">
-      
-      {/* Image + Présentation */}
+      {/* Section principale */}
       <div className="presentation">
-      <Image 
-          src="/images/photo.jpg" 
-          alt="Rodrigue Kengmo" 
-          width={250} 
-          height={250} 
-          className="profile-photo" 
-        />
-        {/* Ton image de profil (à mettre dans /public/images/photo.png par exemple) */}
-        
-        
-        {/* Texte de présentation */}
-        <div className="presentation-text">
-          <h1>SAP-Berater / Consultant, Certified Associate – SAP S/4HANA Cloud, Private Edition</h1>
-          <p>
-  Als zertifizierter SAP-Consultant (FI) und Key-User (CO) bringe ich umfassende Erfahrung in der Analyse, Konzeption und Implementierung von SAP-Lösungen mit. Mein beruflicher Werdegang umfasst vier Jahre Expertise im Bereich Finanzwesen, Buchhaltung, Analyse, Verwaltung und Qualitätsmanagement, mit besonderem Fokus auf die Optimierung von Finanzprozessen.
-</p>
-<ul>
-  <li><strong>SAP FI & CO Expertise</strong> – Entwicklung und Implementierung von Lösungen in komplexen Unternehmensumgebungen</li>
-  <li><strong>Systemintegration & Digitalisierung</strong> – Anbindung von SAP an bestehende ERP-Landschaften</li>
-  <li><strong>S/4HANA Migration</strong> – Entwicklung von Migrationsstrategien zur Einführung von S/4HANA</li>
-  <li><strong>Schulungen & Trainings</strong> – Erstellung und Durchführung von mehrsprachigen Endbenutzer- & Key-User-Schulungen (Deutsch & Französisch)</li>
-  <li><strong>Schnittstellenkommunikation</strong> – Vermittlung zwischen technischen und nichttechnischen Stakeholder zur Optimierung komplexer Systemlandschaften</li>
-</ul>
-<p>
-  Zusätzlich verfüge ich über fundierte Kenntnisse in IT-Sicherheit, insbesondere Netzwerksicherheit und Bedrohungsanalyse, sowie in Webentwicklung (HTML, CSS, JavaScript).
-</p>
-<p><strong>🎯 Zertifizierung:</strong> SAP Certified Associate – SAP S/4HANA Cloud, Private Edition</p>
-
-
-          {/* Bouton de téléchargement du CV */}
-          <a href="/Lebenslauf_Kengmo Rodrigue.pdf" download className="cv-button">
-            📄 MEIN LEBENSLAUF HERUNTERLADEN
-          </a>
+        {/* Image du profil à gauche */}
+        <div className="profile-container">
+          <Image 
+            src="/images/photo.jpg" 
+            alt="Rodrigue Kengmo" 
+            width={350} 
+            height={350} 
+            className="profile-photo" 
+          />
         </div>
-      </div>
+
+        {/* Texte à droite */}
+        <div className="presentation-text">
+          <h1 className="title">SAP-Berater / Consultant – SAP S/4HANA Cloud, Private Edition</h1>
+          <div className="text-columns">
+            <p>
+              Als zertifizierter SAP-Consultant (FI) und Key-User (CO) verfüge ich über vier Jahre Erfahrung 
+              in Finanzwesen, Analyse, Verwaltung und Qualitätsmanagement. Mein Schwerpunkt liegt 
+              auf der Optimierung von Finanzprozessen, der Systemintegration sowie der Migration zu S/4HANA.
+            </p>
+            <p>
+              Ich entwickle und implementiere SAP FI & CO Lösungen in komplexen Unternehmensumgebungen 
+              und unterstütze die Anbindung von SAP an bestehende ERP-Systeme. Zudem bin ich spezialisiert 
+              auf die Entwicklung von Migrationsstrategien für S/4HANA sowie die Erstellung und Durchführung 
+              von mehrsprachigen SAP-Schulungen (Deutsch & Französisch) für Endbenutzer und Key-User.
+            </p>
+            <p>
+              Neben meinen SAP-Kenntnissen verfüge ich über fundiertes Wissen in IT-Sicherheit, insbesondere 
+              Netzwerksicherheit und Bedrohungsanalyse, sowie praktische Erfahrung in der Webentwicklung mit 
+              HTML, CSS und JavaScript.
+            </p>
+          </div>
+          </div>
+          </div>
+
+          {/* Bouton bien en dessous */}
+          <div className="button-container">
+            <a href="/Lebenslauf_Kengmo_Rodrigue.pdf" download className="cv-button">
+              📄 MEIN LEBENSLAUF HERUNTERLADEN
+            </a>
+          </div>
+
+      
             {/* Ici tu ajoutes la section Services */}
-      <h2>Meine Dienstleistungen</h2>
+      <h2>~Meine Dienstleistungen~</h2>
       <div className="services">
         <div className="service-card">
           <span>💼</span>

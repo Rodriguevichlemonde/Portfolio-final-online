@@ -7,7 +7,7 @@ export default function Header() {
         <header className="main-header">
           {/* Ton nom à gauche */}
           <div className="logo">
-            Rodrigue KENGMO KEUFOUET
+            Rodrigue KENGMO K.
           </div>
     
           {/* Menu de navigation à droite */}
