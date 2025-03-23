@@ -72,7 +72,7 @@ html, body {
 /* Contenu principal centré */
 /* Ceci permet de centrer le contenu de la page, avec un fond blanc et un effet de carte */
 main {
-  max-width: 800px; /* Limite la largeur pour que ce soit lisible */
+  
   margin: 40px auto; /* Centre le contenu horizontalement et met une marge de 40px en haut/bas */
   padding: 20px; /* Ajoute de l’espace à l’intérieur de la carte */
   background: white; /* Fond blanc pour faire ressortir le contenu */
@@ -166,8 +166,7 @@ label {
 /* --- PAGE ACCUEIL --- */
 /* Ajuster la largeur de la page */
 .home-container {
-  width: 100vw; /* Définit la largeur à 100% de la fenêtre */
-  max-width: 140%; /* Empêche le dépassement de la largeur */
+ 
   display: flex; /* Active flexbox */
   justify-content: center; /* Centre le contenu */
   align-items: center; /* Centre les éléments verticalement */
@@ -200,7 +199,7 @@ label {
   gap: 40px; /* Ajoute un espace entre l'image et le texte */
   width: 100%; /* Définit la largeur à 100% */
   margin: auto;
-  max-width: 1200px;
+  
 }
 /* Texte à droite */
 .presentation-text {
@@ -285,83 +284,92 @@ label {
   width: 100%; /* Prend toute la largeur du texte */
 }
 /* --- SERVICES --- */
+
 /* Conteneur principal des services */
 .services-container {
   width: 90%; /* Définit une largeur de 90% pour éviter une pleine largeur */
   max-width: 1200px; /* Limite la largeur maximale pour un affichage harmonieux */
   margin: 0 auto; /* Centre la section horizontalement */
   text-align: center; /* Centre le texte */
+  padding: 50px 0; /* Ajoute un espacement en haut et en bas */
 }
 
 /* Titre principal */
 .services-title {
-  margin-top: 50px; /* Ajoute un espacement au-dessus du titre */
-  font-size: 24px; /* Définit la taille du titre */
+  font-size: 28px; /* Taille plus grande */
   font-weight: bold; /* Met en gras */
   color: #0070f3; /* Couleur bleue pour correspondre au design */
+  margin-bottom: 20px; /* Espacement sous le titre */
 }
 
-/* Conteneur des services */
+/* Conteneur des services : chaque service sur une seule ligne */
 .services {
-  display: flex; /* Utilise un affichage en flexbox */
-  flex-direction: column; /* Affiche chaque service sur une seule ligne */
-  gap: 30px; /* Espacement entre chaque service */
-  margin: 50px 0; /* Espacement avec les autres sections */
+  display: flex; /* Utilise Flexbox */
+  flex-direction: column; /* Organise les services en colonne (un en dessous de l'autre) */
+  align-items: center; /* Centre chaque service horizontalement */
+  gap: 25px; /* Espacement entre chaque service */
 }
 
 /* Style de chaque service */
 .service-card {
+  width: 90%; /* Ajuste la largeur */
+  max-width: 600px; /* Empêche que ça devienne trop large */
   background: white; /* Fond blanc */
-  padding: 20px; /* Espacement interne */
+  padding: 25px; /* Espacement interne */
   border-radius: 10px; /* Coins arrondis */
   text-align: center; /* Centre le texte */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
-  transition: transform 0.3s; /* Animation au survol */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Ajoute une ombre douce */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animation fluide */
 }
 
 /* Effet au survol */
 .service-card:hover {
-  transform: translateY(-5px); /* Légère élévation au survol */
+  transform: translateY(-5px); /* Légère élévation */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Ombre plus marquée */
 }
 
 /* Icônes */
 .service-card span {
-  font-size: 40px; /* Icône plus grande */
-  margin-bottom: 10px; /* Espacement en dessous */
-  display: block; /* Force l'affichage en bloc */
+  font-size: 40px; /* Agrandit l’icône */
+  color: #0070f3; /* Icône bleue */
+  margin-bottom: 10px; /* Espacement */
+  display: block;
 }
 
 /* Titre du service */
 .service-card h3 {
-  margin: 10px 0; /* Espacement */
-  color: #0070f3; /* Texte bleu */
+  margin: 12px 0; /* Espacement */
+  font-size: 20px; /* Taille ajustée */
+  color: #0070f3; /* Bleu */
 }
 
 /* Texte du service */
 .service-card p {
-  color: #444; /* Texte gris foncé */
-  font-size: 15px; /* Taille de police */
+  color: #444; /* Gris foncé */
+  font-size: 15px; /* Taille standard */
   line-height: 1.6; /* Espacement des lignes */
+  text-align: center; /* Centre le texte à l'intérieur des cartes */
 }
 
 /* Bouton "Mehr Erfahren" */
 .service-button {
-  display: inline-block; /* Affichage en bloc */
-  margin-top: 15px; /* Espacement */
-  padding: 10px 20px; /* Espacement interne */
-  background-color: #0070f3; /* Couleur principale */
-  color: white; /* Texte blanc */
-  border-radius: 5px; /* Coins arrondis */
-  text-decoration: none; /* Suppression du soulignement */
-  font-weight: bold; /* Texte en gras */
-  transition: background-color 0.3s ease; /* Animation fluide */
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  border: none;
+  cursor: pointer;
 }
 
 /* Effet au survol */
 .service-button:hover {
   background-color: #00a2ff; /* Bleu plus clair */
 }
-
 
 /* --- SECTION PROJETS --- */
 .projects {
