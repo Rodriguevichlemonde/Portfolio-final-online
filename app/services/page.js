@@ -11,8 +11,11 @@ export default function Services() {
 
   return (
     <div className="services-container">
-      <h1> Meine Dienstleistungen </h1>
-      <p>Meine Services sind darauf ausgerichtet, Ihre Geschäftsprozesse effizienter zu gestalten.</p>
+      <div>   
+        <h1> Meine Dienstleistungen </h1>
+        <p>Meine Services sind darauf ausgerichtet, Ihre Geschäftsprozesse effizienter zu gestalten.</p>
+      </div>
+   
 
       <div className="service-grid">
         <div className="service-item">

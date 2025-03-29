@@ -4,48 +4,18 @@ export default function Home() {
   return (
     <div className="home-container">
       {/* Section principale */}
-      <div className="presentation">
-        {/* Image du profil à gauche */}
-        <div className="profile-container">
-          <Image 
-            src="/images/photo.jpg" 
-            alt="Rodrigue Kengmo" 
-            width={350} 
-            height={350} 
-            className="profile-photo" 
-          />
+      <div class="presentation">
+        <div class="profile-image">
+            <Image src="/images/photo.jpg" alt="Rodrigue Kengmo" width="350" height="350" className="profile-photo"/>
         </div>
-
-        {/* Texte à droite */}
-        <div className="presentation-text">
-          <h1 className="title">SAP-Berater / Consultant – SAP S/4HANA Cloud, Private Edition</h1>
-          <div className="text-columns">
-            <p>
-              Als zertifizierter SAP-Consultant (FI) und Key-User (CO) verfüge ich über vier Jahre Erfahrung 
-              in Finanzwesen, Analyse, Verwaltung und Qualitätsmanagement. Mein Schwerpunkt liegt 
-              auf der Optimierung von Finanzprozessen, der Systemintegration sowie der Migration zu S/4HANA.
-            </p>
-            <p>
-              Ich entwickle und implementiere SAP FI & CO Lösungen in komplexen Unternehmensumgebungen 
-              und unterstütze die Anbindung von SAP an bestehende ERP-Systeme. Zudem bin ich spezialisiert 
-              auf die Entwicklung von Migrationsstrategien für S/4HANA sowie die Erstellung und Durchführung 
-              von mehrsprachigen SAP-Schulungen (Deutsch & Französisch) für Endbenutzer und Key-User.
-            </p>
-            <p>
-              Neben meinen SAP-Kenntnissen verfüge ich über fundiertes Wissen in IT-Sicherheit, insbesondere 
-              Netzwerksicherheit und Bedrohungsanalyse, sowie praktische Erfahrung in der Webentwicklung mit 
-              HTML, CSS und JavaScript.
-            </p>
-          </div>
-          </div>
-          </div>
-
-          {/* Bouton bien en dessous */}
-          <div className="button-container">
-            <a href="/Lebenslauf_Kengmo_Rodrigue.pdf" download className="cv-button">
-              📄 MEIN LEBENSLAUF HERUNTERLADEN
-            </a>
-          </div>
+        <div class="profile-content">
+            <h2>SAP-Berater / Consultant – SAP S/4HANA Cloud, Private Edition</h2>
+            <p>Als zertifizierter SAP-Consultant (FI) und Key-User (CO) verfüge ich über vier Jahre Erfahrung in Finanzwesen, Analyse, Verwaltung und Qualitätsmanagement. Mein Schwerpunkt liegt auf der Optimierung von Finanzprozessen, der Systemintegration sowie der Migration zu S/4HANA.</p>
+            <p>Ich entwickle und implementiere SAP FI & CO Lösungen in komplexen Unternehmensumgebungen und unterstütze die Anbindung von SAP an bestehende ERP-Systeme. Zudem bin ich spezialisiert auf die Entwicklung von Migrationsstrategien für S/4HANA sowie die Erstellung und Durchführung von mehrsprachigen SAP-Schulungen (Deutsch & Französisch) für Endbenutzer und Key-User.</p>
+            <p>Neben meinen SAP-Kenntnissen verfüge ich über fundiertes Wissen in IT-Sicherheit, insbesondere Netzwerksicherheit und Bedrohungsanalyse, sowie praktische Erfahrung in der Webentwicklung mit HTML, CSS und JavaScript.</p>
+            <a href="#" class="btn-download">Mein Lebenslauf herunterladen</a>
+        </div>
+    </div>
 
       
             {/* Ici tu ajoutes la section Services */}
