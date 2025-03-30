@@ -183,8 +183,8 @@ label {
 
 .profile-image img {
   border-radius: 50%;
-  width: 220px;
-  height: 220px;
+  width: 250px;
+  height: 350px;
   object-fit: cover;
   border: 4px solid #fff;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
@@ -213,15 +213,17 @@ label {
 }
 
 .btn-download {
-  margin-top: 20px;
-  display: inline-block;
+  margin: 20px auto;         /* Centre horizontalement */
+  display: inline-block;     /* Permet à la largeur de s’adapter au contenu */
   text-decoration: none;
   color: #fff;
   background-color: #007bff;
   padding: 10px 20px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  text-align: center;
 }
+
 
 .btn-download:hover {
   background-color: #0056b3;
@@ -240,7 +242,7 @@ label {
 
 /* Conteneur principal des services */
 .services-container {
-  width: 90%; /* Définit une largeur de 90% pour éviter une pleine largeur */
+  width: 95%; /* Définit une largeur de 90% pour éviter une pleine largeur */
   max-width: 1200px; /* Limite la largeur maximale pour un affichage harmonieux */
   margin: 0 auto; /* Centre la section horizontalement */
   text-align: center; /* Centre le texte */
@@ -254,6 +256,17 @@ label {
   color: #0070f3; /* Couleur bleue pour correspondre au design */
   margin-bottom: 20px; /* Espacement sous le titre */
 }
+
+/* titre de Meine dienstleistungen et Meine Projekt au niveau de Startseite */
+.dienstleistungen-title {
+  margin-top: 4rem; /* ✅ Ajoute un grand espace au-dessus du titre (~64px) pour l'aérer */
+  margin-bottom: 2rem; /* ✅ Ajoute de l'espace en dessous du titre (~32px) pour séparer des éléments suivants */
+  text-align: center; /* ✅ Centre le texte horizontalement dans le conteneur */
+  font-size: 2rem; /* ✅ Définit la taille du texte à environ 28px (équivalent Tailwind text-2xl) */
+  font-weight: 600; /* ✅ Rend le texte semi-gras pour une meilleure visibilité (équivalent Tailwind font-semibold) */
+  color: #1a1a1a; /* ✅ Utilise un gris très foncé au lieu du noir pur, pour un look plus doux et professionnel */
+}
+
 
 /* Conteneur des services : chaque service sur une seule ligne startseite !!!! */
 .services {
@@ -321,6 +334,13 @@ label {
 .service-button:hover {
   background-color: #00a2ff; /* Bleu plus clair */
 }
+
+.center-button-container {
+  text-align: center; /* Centre les éléments en inline ou inline-block */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 
 /* --- SECTION PROJETS --- */
 .projects {
@@ -445,30 +465,38 @@ label {
   margin: 30px auto;                 /* Marge en haut + centrage horizontal */
   width: 75%;                        /* Largeur de la section */
 }
-
+/* modification sous-titres de services avec ce style  */
+.service-subtitle {
+  font-size: 25px;         /* ✅ Définit la taille du texte à 25 pixels (équivalent à ~1.56rem) */
+  font-weight: 600;        /* ✅ Applique une graisse semi-grasse (équivalent à Tailwind 'font-semibold') */
+  color: #1d4ed8;          /* ✅ Applique un bleu élégant et professionnel (équivalent Tailwind 'text-blue-700') */
+  margin-bottom: 1rem;     /* ✅ Ajoute un espace de 16px en dessous du sous-titre pour l'aérer */
+}
 
 
 .service-item {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  background-color: #fff; /* ✅ Fond blanc pour un look propre et professionnel */
+  padding: 2rem; /* ✅ Espace intérieur (haut, bas, gauche, droite) de 32px pour aérer le contenu */
+  border-radius: 12px; /* ✅ Coins arrondis pour un effet de carte douce */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* ✅ Légère ombre pour donner du relief */
+  transition: all 0.3s ease; /* ✅ Animation fluide de toutes les propriétés modifiées au survol */
+  border: 2px solid transparent; /* ✅ Bordure invisible par défaut pour préparer l'effet hover */
 }
 
 .service-item:hover {
-  transform: translateY(-5px);
+  border-color: #1d4ed8; /* ✅ Devient bleu au survol (bleu Tailwind text-blue-700) */
+  box-shadow: 0 6px 16px rgba(29, 78, 216, 0.1); /* ✅ Ombre légèrement plus grande et teintée de bleu pour un effet subtil */
 }
 
 .service-item h3 {
   color: #0070f3;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .service-item p {
   color: #444;
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 2;
 }
 
 .service-item a {
@@ -544,16 +572,7 @@ label {
 
 
 
-/* Liens */
-.important-link {
-  color: #0070f3;
-  font-weight: bold;
-  text-decoration: none;
-}
 
-.important-link:hover {
-  text-decoration: underline;
-}
 
 /* Media Query pour mobile */
 @media screen and (max-width: 600px) {
@@ -579,77 +598,92 @@ label {
 }
 /* --- KONTAKTSEITE --- */
 .contact-container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  text-align: center;
+  max-width: 1000px;        /* ✅ Limite la largeur du formulaire à 800px pour un affichage lisible */
+  margin: 40px auto;       /* ✅ Centre le conteneur horizontalement avec un espacement vertical de 40px */
+  
+  text-align: center;      /* ✅ Centre le texte à l’intérieur du conteneur (sauf si redéfini plus bas) */
 }
 
 .contact-container h1 {
-  color: #0070f3;
-  margin-bottom: 10px;
+  color: #0070f3;          /* ✅ Applique un bleu vif au titre principal */
+  margin-bottom: 35px;     /* ✅ Espace sous le titre */
 }
 
 .contact-info {
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-  margin: 30px 0;
+  display: flex;                /* ✅ Utilise Flexbox pour aligner les blocs horizontalement */
+  justify-content: space-between; /* ✅ Répartit l’espace entre les éléments */
+  text-align: left;             /* ✅ Aligne le texte à gauche à l’intérieur des colonnes */
+  margin: 30px 0;               /* ✅ Espace vertical autour de la section */
 }
 
 .contact-info div {
-  flex: 1;
-  padding: 10px;
+  flex: 1;                      /* ✅ Chaque colonne prend la même largeur */
+  padding: 10px;                /* ✅ Espace intérieur autour du contenu */
 }
 
 .contact-info h3 {
-  color: #0070f3;
+  color: #0070f3;              /* ✅ Titre de section en bleu */
 }
 
 .contact-form {
-  margin-top: 20px;
-  text-align: left;
+  margin-top: 25px;            /* ✅ Espace au-dessus du formulaire */
+  text-align: left;            /* ✅ Aligne les libellés et champs à gauche */
 }
 
 .form-row {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 15px;
+  display: flex;               /* ✅ Les champs sont alignés horizontalement */
+  gap: 20px;                   /* ✅ Espace entre les champs */
+  margin-bottom: 15px;         /* ✅ Espace vertical entre les lignes du formulaire */
 }
 
 .form-group {
-  flex: 1;
+  flex: 1;                     /* ✅ Chaque champ prend une largeur égale */
   display: flex;
-  flex-direction: column;
+  flex-direction: column;     /* ✅ Empile les éléments (label + champ) verticalement */
 }
 
 .form-group label {
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-weight: bold;          /* ✅ Rend les labels visibles et lisibles */
+  margin-bottom: 5px;         /* ✅ Petit espace entre le label et le champ */
 }
 
-.form-group input, .form-group textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
+.form-group input,
+.form-group textarea {
+  padding: 10px;              /* ✅ Espace intérieur dans les champs pour plus de confort */
+  border: 1px solid #ccc;     /* ✅ Bordure grise discrète */
+  border-radius: 5px;         /* ✅ Coins arrondis pour un style moderne */
+  font-size: 18px;            /* ✅ Taille de police lisible */
 }
 
 .contact-button {
-  width: 100%;
-  padding: 12px;
-  background-color: #0070f3;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background 0.3s;
+  width: 100%;                /* ✅ Le bouton prend toute la largeur disponible */
+  padding: 12px;              /* ✅ Bonne taille pour le clic */
+  background-color: #0070f3;  /* ✅ Bleu principal */
+  color: white;               /* ✅ Texte blanc */
+  border: none;               /* ✅ Retire la bordure par défaut */
+  border-radius: 5px;         /* ✅ Coins arrondis */
+  font-size: 18px;            /* ✅ Texte bien visible */
+  cursor: pointer;            /* ✅ Change le curseur au survol */
+  transition: background 0.3s;/* ✅ Transition douce sur le fond au survol */
+
 }
 
-.contact-button:hover {
-  background-color: #005bb5;
+.contact-description {
+  font-size: 18px;       /* ✅ Taille de police augmentée pour une meilleure lisibilité */
+  color: #333;           /* ✅ Couleur légèrement plus douce que le noir pur */
+  line-height: 1.6;      /* ✅ Espacement entre les lignes pour un confort de lecture */
+  max-width: 800px;      /* ✅ Garde un texte lisible sur les grands écrans */
+  margin: 0 auto;        /* ✅ Centre le bloc horizontalement */
+  text-align: center;    /* ✅ Centre le texte */
+  padding: 0 15px;       /* ✅ Un peu d’espace sur les côtés pour les petits écrans */
 }
+
+
+
+.contact-button:hover {
+  background-color: #005bb5;  /* ✅ Bleu plus foncé au survol */
+}
+
 
 /* Mobile Responsive */
 @media screen and (max-width: 600px) {
@@ -780,36 +814,20 @@ label {
     font-size: 16px;
   }
 }
-/* Style général des liens importants */
+/* Liens importants */
 .important-link {
-  color: #0073b1;  /* Bleu LinkedIn */
+  color: #1d4ed8; /* Bleu profond et pro */
+  font-weight: 600; /* Semi-bold */
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .important-link:hover {
-  color: #005582; /* Bleu foncé au survol */
+  color: #2563eb; /* Bleu plus clair au survol */
   text-decoration: underline;
+  cursor: pointer;
 }
 
-/* Ajout d'espacement entre les liens */
-.wichtige-links p {
-  margin-bottom: 10px;
-}
 
-/* Style du conteneur des liens */
-.wichtige-links {
-  background-color: #f8f9fa; /* Fond légèrement gris */
-  padding: 15px;
-  border-radius: 8px;
-  text-align: left;
-}
-
-/* Icônes ajoutées (si besoin) */
-.wichtige-links p::before {
-  content: "🔗";
-  margin-right: 5px;
-}
 
 

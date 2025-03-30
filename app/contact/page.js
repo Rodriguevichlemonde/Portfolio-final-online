@@ -5,12 +5,13 @@ export default function Contact() {
     <div className="contact-container">
       
       {/* Titre principal */}
-      <h1>Kontakt aufnehmen</h1>
+  
+      <h1 className="contact-title">Kontakt aufnehmen</h1>
+
 
       {/* Texte d'introduction */}
-      <p>
-        Ich bin offen für neue Möglichkeiten als <strong>SAP-Berater</strong> oder für eine <strong>Vollzeitstelle</strong> in einem Unternehmen.
-        Zögern Sie nicht, mich zu kontaktieren, wenn Sie Fragen haben oder mit mir zusammenarbeiten möchten.
+      <p className="contact-description">
+  Ich bin offen für neue Möglichkeiten als <strong>SAP-Berater</strong> oder für eine <strong>Vollzeitstelle</strong> in einem Unternehmen. Zögern Sie nicht, mich zu kontaktieren, wenn Sie Fragen haben oder mit mir zusammenarbeiten möchten.
       </p>
 
       {/* Informations de contact */}

@@ -19,7 +19,7 @@ export default function Services() {
 
       <div className="service-grid">
         <div className="service-item">
-          <h3>SAP FI Beratung</h3>
+        <h3 className="service-subtitle">SAP FI Beratung</h3>
           <p>Beratung bei der Einführung und Optimierung von SAP FI (Finanzbuchhaltung).</p>
           
           <a href="#" onClick={() => toggleDetails("sapFI")}>
@@ -34,7 +34,7 @@ export default function Services() {
         </div>
 
         <div className="service-item">
-          <h3>Finanzprozesse Optimierung</h3>
+          <h3 className="service-subtitle">Finanzprozesse Optimierung</h3>
           <p>Analyse und Verbesserung von Buchhaltungs- und Finanzprozessen.</p>
 
           <a href="#" onClick={() => toggleDetails("financeOpt")}>
@@ -50,7 +50,7 @@ export default function Services() {
 
 
         <div className="service-item">
-          <h3> Schulung und Support </h3>
+          <h3 className="service-subtitle">Schulung und Support</h3>
           <p>Schulungen für SAP FI Nutzer und laufender Support.</p>
 
           <a href="#" onClick={() => toggleDetails("financeOpt")}>
@@ -64,7 +64,7 @@ export default function Services() {
           )}
         </div>
         <div className="service-item">
-          <h3>Berichterstattung & Jahresabschluss</h3>
+          <h3 className="service-subtitle">Berichterstattung & Jahresabschluss</h3>
           <p>Beratung zur Erstellung von Finanzberichten und Jahresabschlüssen mit SAP.</p>
 
           <a href="#" onClick={() => toggleDetails("financeOpt")}>

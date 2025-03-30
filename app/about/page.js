@@ -32,11 +32,16 @@ export default function About() {
           <p><strong>Mitarbeiter in der Verwaltung und Reinigung</strong> — WISAG Lebensmittelhygiene GmbH (01/2020 – 08/2022)</p>
           <p>Verwaltung, Dokumentation und Qualitätskontrolle. Einhaltung von Hygiene- und Sicherheitsstandards.</p>
         </div>
-         {/* Bouton pour télécharger le CV */}
-      <a href="/Lebenslauf_Kengmo_Rodrigue.pdf" download className="cv-button">
-        📄 Mein Lebenslauf herunterladen
-      </a>
+        
+          {/* Bouton pour télécharger le CV */}
+          <div className="center-button-container">
+          <a href="/Lebenslauf_Kengmo_Rodrigue.pdf" download className="btn-download">
+           📄 Mein Lebenslauf herunterladen
+          </a>
+          </div>
       </div>
     );
   }
+  
+
   

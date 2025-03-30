@@ -13,9 +13,15 @@ export default function Footer() {
           <Link href="https://www.linkedin.com/in/rodrigue-kengmo-k-45b48a252/" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </Link>
-          <Link href="/Lebenslauf_Kengmo_Rodrigue.pdf" download>
-            Lebenslauf herunterladen
-          </Link>
+          <a
+           href="https://drive.google.com/uc?export=download&id=1sSeD6Uh5Yn6yirm4nv-oDGlG8e1MMljm"
+           className="footer-cv-link"
+           target="_blank"
+           rel="noopener noreferrer"
+>
+           Lebenslauf herunterladen
+          </a>
+
         </div>
 
         {/* Contact */}

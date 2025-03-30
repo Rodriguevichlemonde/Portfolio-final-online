@@ -82,15 +82,18 @@ export default function Projects() {
 </p>
 
 {/* Lien de téléchargement du CV */}
-<p>📄 Mein Lebenslauf herunterladen:{" "}
+<p>
+  📄 Mein Lebenslauf herunterladen:{" "}
   <a
-    href="/Lebenslauf_Kengmo_Rodrigue.pdf"
-    download
+    href="https://drive.google.com/uc?export=download&id=1sSeD6Uh5Yn6yirm4nv-oDGlG8e1MMljm"
+    target="_blank"
+    rel="noopener noreferrer"
     className="important-link"
   >
     Lebenslauf herunterladen
   </a>
 </p>
+
 </div>
 
     );

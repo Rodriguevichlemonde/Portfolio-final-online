@@ -13,13 +13,25 @@ export default function Home() {
             <p>Als zertifizierter SAP-Consultant (FI) und Key-User (CO) verfüge ich über vier Jahre Erfahrung in Finanzwesen, Analyse, Verwaltung und Qualitätsmanagement. Mein Schwerpunkt liegt auf der Optimierung von Finanzprozessen, der Systemintegration sowie der Migration zu S/4HANA.</p>
             <p>Ich entwickle und implementiere SAP FI & CO Lösungen in komplexen Unternehmensumgebungen und unterstütze die Anbindung von SAP an bestehende ERP-Systeme. Zudem bin ich spezialisiert auf die Entwicklung von Migrationsstrategien für S/4HANA sowie die Erstellung und Durchführung von mehrsprachigen SAP-Schulungen (Deutsch & Französisch) für Endbenutzer und Key-User.</p>
             <p>Neben meinen SAP-Kenntnissen verfüge ich über fundiertes Wissen in IT-Sicherheit, insbesondere Netzwerksicherheit und Bedrohungsanalyse, sowie praktische Erfahrung in der Webentwicklung mit HTML, CSS und JavaScript.</p>
-            <a href="#" class="btn-download">Mein Lebenslauf herunterladen</a>
+            
+
+            <a
+              href="https://drive.google.com/uc?export=download&id=1sSeD6Uh5Yn6yirm4nv-oDGlG8e1MMljm"
+              className="btn-download"
+              target="_blank"
+              rel="noopener noreferrer"
+>
+              📄 Mein Lebenslauf herunterladen
+            </a>
+
         </div>
     </div>
 
       
             {/* Ici tu ajoutes la section Services */}
-      <h2>~Meine Dienstleistungen~</h2>
+
+            <h2 className="dienstleistungen-title">~Meine Dienstleistungen~</h2>
+
       <div className="services">
         <div className="service-card">
           <span>💼</span>
@@ -43,7 +55,9 @@ export default function Home() {
         </div>
       </div>
 
-      <h2>~ Meine Projekte ~</h2>
+      <h2 className="dienstleistungen-title">~ Meine Projekte ~</h2>
+
+
 <div className="projects">
   <div className="project-card">
   <Image 
@@ -84,43 +98,6 @@ export default function Home() {
     <a href="#" className="project-button">Zum Projekt</a>
   </div>
 </div>
-  {/* WICHTIGE LINKS */}
-<h2>Wichtige Links</h2>
-
-{/* Lien LinkedIn */}
-<p>🔗 Mein LinkedIn-Profil:{" "}
-  <a
-    href="https://www.linkedin.com/in/rodrigue-kengmo-k-45b48a252/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="important-link"
-  >
-    LinkedIn ansehen
-  </a>
-</p>
-
-{/* Nouveau lien GitHub ajouté ici */}
-<p>📂 Mein GitHub-Repository:{" "}
-  <a
-    href="https://github.com/Rodriguevichlemonde"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="important-link"
-  >
-    Mein GitHub-Profil ansehen
-  </a>
-</p>
-
-{/* Lien de téléchargement du CV */}
-<p>📄 Mein Lebenslauf herunterladen:{" "}
-  <a
-    href="/Lebenslauf_Kengmo_Rodrigue.pdf"
-    download
-    className="important-link"
-  >
-    Lebenslauf herunterladen
-  </a>
-</p>
 </div>
 
 );
